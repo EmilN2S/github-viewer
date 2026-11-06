@@ -1,5 +1,6 @@
 import requests
 
+
 def profile(username: str) -> dict | None:
     try:
         response = requests.get(
