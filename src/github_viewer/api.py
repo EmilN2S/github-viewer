@@ -1,8 +1,8 @@
 import requests
 
 
-class GithubRequests:
-    def __init__(self, username):
+class GithubViewer:
+    def __init__(self, username: str) -> None:
         self.username = username
     
     def profile(self) -> dict | None:
