@@ -1,5 +1,8 @@
 from sys import argv
 
-from github_viewer.api import profile
+from github_viewer.api import GithubViewer
 
-print(profile(argv[1]))
+if len(argv) != 2:
+    print("usage: request_status.py <username>")
+else:
+    print(GithubViewer(username=argv[1]).profile())
